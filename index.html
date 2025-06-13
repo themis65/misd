@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Soporte Digital</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description"
+    content="Servicios de soporte técnico, mantenimiento de computadoras, seguridad digital y videovigilancia para hogares y pequeños negocios.">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="pictures/logo1.png" alt="Logo Mi Soporte Digital" class="logo-img" />
+        <h1>Mi Soporte Digital</h1>
+      </div>
+      <nav class="nav-desktop">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">&#9776;</div>
+    </div>
+    <nav class="nav-mobile">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="inicio" class="titulo">
+      <div class="container">
+        <h2>Soluciones Técnicas y Seguridad Digital</h2>
+        <p>Ofrecemos soluciones técnicas accesibles y confiables en mantenimiento de computadoras, seguridad básica
+          digital y videovigilancia, dirigidas a hogares y pequeños negocios.</p>
+      </div>
+    </section>
+
+    <section class="servicios" id="servicios">
+      <section class="tarjeta-servicio">
+        <div class="tarjeta-imagen">
+          <img src="pictures/mantenimiento-computadores.jpg" alt="Mantenimiento de Computadoras" loading="lazy" />
+        </div>
+        <div class="tarjeta-contenido">
+          <h2>Mantenimiento de Hardware y Software</h2>
+          <p>Revisión, limpieza y reparación para prolongar la vida útil de tus equipos.</p>
+          <a href="https://wa.me/593983954062" target="_blank" class="boton-azul">Desde $15,00</a>
+        </div>
+      </section>
+
+      <section class="tarjeta-servicio">
+        <div class="tarjeta-imagen">
+          <img src="pictures/optimizar.png" alt="Optimización de Sistemas" loading="lazy" />
+        </div>
+        <div class="tarjeta-contenido">
+          <h2>Optimización de Sistemas</h2>
+          <p>Mejoramos el rendimiento eliminando software basura y configurando adecuadamente tu equipo.</p>
+          <a href="https://wa.me/593983954062" target="_blank" class="boton-azul">Desde $10,00</a>
+        </div>
+      </section>
+
+      <section class="tarjeta-servicio">
+        <div class="tarjeta-imagen">
+          <img src="pictures/seguridad-digital.jpg" alt="Seguridad Digital Básica" loading="lazy" />
+        </div>
+        <div class="tarjeta-contenido">
+          <h2>Seguridad Digital Básica</h2>
+          <p>Instalamos antivirus, firewall y soluciones de respaldo para proteger tus datos.</p>
+          <a href="https://wa.me/593983954062" target="_blank" class="boton-azul">Desde $10,00</a>
+        </div>
+      </section>
+
+      <section class="tarjeta-servicio">
+        <div class="tarjeta-imagen">
+          <img src="pictures/cam.jpg" alt="Cámaras IP" loading="lazy" />
+        </div>
+        <div class="tarjeta-contenido">
+          <h2>Instalación de cámaras IP de videovigilancia</h2>
+          <p>Instalamos cámaras IP para monitorear tus espacios.</p>
+          <a href="https://wa.me/593983954062" target="_blank" class="boton-azul">Desde $210,00</a>
+        </div>
+      </section>
+      </div>
+    </section>
+
+    <div class="redes-sociales">
+      <a href="https://www.facebook.com/Bryan.Taco.65" target="_blank"><img src="pictures/facebook.png" alt="Facebook"
+          class="icono-red" /></a>
+      <a href="https://www.instagram.com/themis.taco/" target="_blank"><img src="pictures/instagram.jpg" alt="Instagram"
+          class="icono-red" /></a>
+      <a href="https://wa.me/593983954062" target="_blank"><img src="pictures/whatsapp.jpg" alt="WhatsApp"
+          class="icono-red" /></a>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p>Horario de atención: Lunes a Sábado - 08h00 a 23h00</p>
+      <p>Contacto: soporte@misoportedigital.info | WhatsApp: +593 983 954 062</p>
+      <p>&copy; 2025 Misael Taco</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const mobileNav = document.querySelector(".nav-mobile");
+    toggle.addEventListener("click", () => {
+      mobileNav.classList.toggle("open");
+    });
+  </script>
+</body>
+
+</html>

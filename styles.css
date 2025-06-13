@@ -1,0 +1,287 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* HEADER */
+header {
+  background-color: #1f3a60;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 30%;
+}
+
+header h1 {
+  font-size: 1.8em;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #cbd7f1;
+}
+
+/* MENÚ RESPONSIVO */
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+.nav-mobile {
+  display: none;
+  flex-direction: column;
+  background-color: #1f3a60;
+  padding: 15px;
+}
+
+.nav-mobile.open {
+  display: flex;
+}
+
+.nav-mobile a {
+  color: white;
+  padding: 10px 0;
+  border-bottom: 1px solid #ffffff33;
+}
+
+.nav-mobile a:hover {
+  color: #cbd7f1;
+}
+
+/* TÍTULO PRINCIPAL */
+.titulo {
+  background: #eaf0fb;
+  padding: 60px 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+.titulo h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.titulo p {
+  color: #586875;
+  font-size: 1.1em;
+  padding: 0 10px;
+}
+
+.servicios h2 {
+  text-align: center;
+  margin: 60px 0 30px;
+  font-size: 2em;
+  color: #1f3a60;
+}
+
+.tarjeta-servicio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 10px;
+  background-color: #ecf0f8b2;
+  margin-bottom: 0;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.8s ease-out;
+}
+
+.tarjeta-imagen img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.tarjeta-contenido {
+  flex: 1;
+  text-align: center;
+}
+
+.tarjeta-contenido h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #1f3a60;
+}
+
+.tarjeta-contenido p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.boton-azul {
+  display: inline-block;
+  background-color: #0071e3;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton-azul:hover {
+  background-color: #005bb5;
+}
+
+/* REDES SOCIALES */
+.redes-sociales {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.icono-red {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icono-red:hover {
+  transform: scale(1.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  background-color: #1f3a60;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  border-top: 3px solid #cbd7f1;
+  animation: fadeIn 1s ease-out;
+}
+
+/* ANIMACIONES */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 10px;
+  }
+
+  .tarjeta-servicio {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 20px;
+  }
+
+  .tarjeta-imagen img {
+    max-width: 100%;
+  }
+
+  .nav-desktop {
+    display: none !important;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  header .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .boton-azul {
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    padding: 14px;
+  }
+}
+@media (min-width: 901px) {
+  .nav-mobile {
+    display: none !important;
+  }
+  .nav-desktop {
+    display: block !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-desktop {
+    display: none !important;
+  }
+  .nav-mobile {
+    display: flex !important;
+  }
+}
+
+@media (min-width: 901px) {
+  .servicios {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .tarjeta-servicio:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .tarjeta-servicio {
+    flex-direction: row;
+  }
+}
